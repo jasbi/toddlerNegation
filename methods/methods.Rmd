@@ -1,0 +1,112 @@
+---
+title: "Methods for Toddler's Comprehension of Negation"
+author: "Masoud Jasbi, Annika Mcdermott-Hinman"
+date: "6/30/2019"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Main Question: At what age do toddlers understand negation in the context of rejecting desires?
+
+## Design
+
+The study presents toddlers with video recordings and measures their looking time to the screen in a violation of expectation paradigm (Baillargeon, Spelke, Wasserman 1985). In each trial, there are two puppets and two objects on the screen. One puppet asks the other if they want one of the objects. The second puppets answers with "yes" or "no". Then the first puppet goes ahead to give them the object they wanted, or the object they did not want.
+
+The study has four within-subject trial types. These four trial-types are created based on two factors:
+
+1. Whehther the answer to the question is positive or negative
+2. Whether the reaction to the answer is consistent or inconsistent with the expressed desire 
+
+The table below summarizes the study's $2\times2$ design. Positive trial types consititue the control condition and negative trial types constitute the test condition.
+
+|Condition|Trial-Type|Objects|Question|Answer|Reaction|
+|-------|-----|-------|-------|-----|-------|
+|Control|Positive-Consistent|X, Y| Do you want the X?| Yes| gives X|
+|Control|Positive-Inconsistent|X, Y| Do you want the X?| Yes| gives Y|
+|Test|Negative-Consistent|X, Y| Do you want the X?| No| gives Y|
+|Test|Negative-Inconsistent|X, Y| Do you want the X?| No| gives X|
+
+## Stimuli
+
+### Puppets and Objects
+
+[we should include the picture of the puppets and the objects used in the experiment]
+
+2 puppets
+
+Objects:
+apple vs. banana
+ball vs. car
+dog vs. kitty
+ducky vs. bear
+
+### Linguistic Stimuli
+
+<!--Annika: can you include the analyses of the age of acquisition for all the words we use in the study here? Basically the report you wrote using wordbank.stanford.edu and childes-db.stanford.edu -->
+
+List of lexical items used: no, yes, want, you, ... [list of our items like car, banana, ...] 
+
+According to CDI data (accessed through wordbank.stanford.edu), around 27 months of age almost all children produce "yes" and "no". 
+
+Studies to cite on earlier comprehension of these common nouns: Bergelson and Swingley (2012, 2015)
+
+### Video Recording and Editing
+
+## Trials
+
+### Block 1: Positive Consistent
+
+|Objects|Question|Answer|Reaction|
+|-------|-------|-----|-------|
+|Apple, Banana| Do you want the apple?| Yes| gives apple|
+|Ball, Car| Do you want the ball?| Yes| gives ball|
+|Cat, Dog| Do you want the kitty?| Yes| gives cat|
+|Duck, Bear| Do you want the ducky?| Yes| gives duck|
+
+### Block 2: Positive Inconsistent
+
+|Objects|Question|Answer|Reaction|
+|-------|-------|-----|-------|
+|Apple, Banana| Do you want the apple?| Yes| gives banana|
+|Ball, Car| Do you want the ball?| Yes| gives car|
+|Cat, Dog| Do you want the kitty?| Yes| gives dog|
+|Duck, Bear| Do you want the ducky?| Yes| gives bear|
+
+### Block 3: Negative Consistent
+
+|Objects|Question|Answer|Reaction|
+|-------|-------|-----|-------|
+|Apple, Banana| Do you want the apple?| No| gives banana|
+|Ball, Car| Do you want the ball?| No| gives car|
+|Cat, Dog| Do you want the kitty?| No| gives dog|
+|Duck, Bear| Do you want the ducky?| No| gives bear|
+
+### Block 4: Negative Inconsistent
+
+|Objects|Question|Answer|Reaction|
+|-------|-------|-----|-------|
+|Apple, Banana| Do you want the apple?| No| gives apple|
+|Ball, Car| Do you want the ball?| No| gives ball|
+|Cat, Dog| Do you want the kitty?| No| gives cat|
+|Duck, Bear| Do you want the ducky?| No| gives duck|
+
+## Participants
+
+Csibra et al (2016) report that the average effect size in infant looking time studies is about 0.6. Based on this they recommend at least 12 participants and for smaller than usual effect sizes at least 26 participants. Therefore, for our pilot study we aim to recruit between 12-26 participants in the age range of 24-30 months.
+
+## Measurment & Reliability
+
+We use the duration of infant's looking at the screen after a trial video has ended as our dependent measure. All trials end with the last frame frozen on the screen. We move to the next trial if infants stop looking at the screen for more than 2 seconds. Timing, trial ordering, and presentation was managed using the open source software [https://github.com/jfkominsky/PyHab/releases](PyHab developed by Jonathan Kominsky)
+
+## Results and Analyses
+
+We predict that toddlers who understand our task will look longer at inconsistent trials than consistent ones. In the control condition, success inscludes correct comprehension of the positive word "yes". In the test condition, success involves correct comprehension of the negative word "no".
+
+To test toddler's performance we use a Bayesian linear regression with the following as predictors: answer (yes/no) and reaction (consistent/inconsistent). Following Barr et al, we use the maximal by subject and item random effects. Item here is interpreted as the object handed to the second puppet by the first.
+
+Following the adivce of Csibra et al (2016) we log-transform the infant looking time for our statistical analyses.
+
+<!-- Potential places to submit this as a registered report: Developmental Science, Cognition, Child Language,  Language Learning-->
