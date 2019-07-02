@@ -1,6 +1,6 @@
 ---
 title: "Methods for Toddler's Comprehension of Negation"
-author: "Masoud Jasbi, Annika Mcdermott-Hinman"
+author: "Masoud Jasbi, Annika McDermott-Hinman"
 date: "6/30/2019"
 output: pdf_document
 ---
@@ -20,7 +20,7 @@ The study has four within-subject trial types. These four trial-types are create
 1. Whehther the answer to the question is positive or negative
 2. Whether the reaction to the answer is consistent or inconsistent with the expressed desire 
 
-The table below summarizes the study's $2\times2$ design. Positive trial types consititue the control condition and negative trial types constitute the test condition.
+The table below summarizes the study's $2\times2$ design. Positive trial types consititue the control condition and negative trial types constitute the test condition. Additionally, there will be a familiarization trial at the beginning of the study to allow the children to become accustomed to the stimuli before the test trials. 
 
 |Condition|Trial-Type|Objects|Question|Answer|Reaction|
 |-------|-----|-------|-------|-----|-------|
@@ -38,10 +38,10 @@ The table below summarizes the study's $2\times2$ design. Positive trial types c
 2 puppets
 
 Objects:
-apple vs. banana
-ball vs. car
-dog vs. kitty
-ducky vs. bear
+apple vs. banana;
+ball vs. car;
+dog vs. kitty;
+ducky vs. bear;
 
 ### Linguistic Stimuli
 
