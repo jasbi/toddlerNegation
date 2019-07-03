@@ -17,7 +17,7 @@ The study presents toddlers with video recordings and measures their looking tim
 
 The study has four within-subject trial types. These four trial-types are created based on two factors:
 
-1. Whehther the answer to the question is positive or negative
+1. Whether the answer to the question is positive or negative
 2. Whether the reaction to the answer is consistent or inconsistent with the expressed desire 
 
 The table below summarizes the study's $2\times2$ design. Positive trial types consititue the control condition and negative trial types constitute the test condition. Additionally, there will be a familiarization trial at the beginning of the study to allow the children to become accustomed to the stimuli before the test trials. 
@@ -47,7 +47,7 @@ ducky vs. bear;
 
 <!--Annika: can you include the analyses of the age of acquisition for all the words we use in the study here? Basically the report you wrote using wordbank.stanford.edu and childes-db.stanford.edu -->
 
-List of lexical items used: no, yes, want, you, ... [list of our items like car, banana, ...] 
+List of lexical items used: no, yes, want, you, do, the, apple, banana, ball, car, dog, cat, duck, bear ... [list of our items like car, banana, ...] 
 
 According to CDI data (accessed through wordbank.stanford.edu), around 27 months of age almost all children produce "yes" and "no". 
 
