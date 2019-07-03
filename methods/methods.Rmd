@@ -40,18 +40,25 @@ The table below summarizes the study's $2\times2$ design. Positive trial types c
 Objects:
 apple vs. banana;
 ball vs. car;
-dog vs. kitty;
-ducky vs. bear;
+dog vs. cat;
+duck vs. bear;
 
 ### Linguistic Stimuli
 
 <!--Annika: can you include the analyses of the age of acquisition for all the words we use in the study here? Basically the report you wrote using wordbank.stanford.edu and childes-db.stanford.edu -->
 
-List of lexical items used: no, yes, want, you, do, the, apple, banana, ball, car, dog, cat, duck, bear ... [list of our items like car, banana, ...] 
+List of lexical items used: no, yes, want, you, do, the, apple, banana, ball, car, dog, cat, duck, bear 
 
-According to CDI data (accessed through wordbank.stanford.edu), around 27 months of age almost all children produce "yes" and "no". 
+According to CDI data (accessed through wordbank.stanford.edu), around 27 months of age almost all children produce "yes" and "no". The names for all of the objects used are produced by more than 75% of children at 27 months, and are among the first nouns that children produce, as reported by parents (wordbank.stanford.edu). Additionally, Bergelson and Swingley (2012, 2015) provide good evidence that children understand common nouns long before they begin to produce them (as early as 6-9 months). 
 
-Studies to cite on earlier comprehension of these common nouns: Bergelson and Swingley (2012, 2015)
+The remaining words used in the study (do, you, want, the) are clustered around 50% in terms of production at 27 months, and that proportion in increasing rapidly at that age, as seen in the graph. 
+
+![Production for Yes and No](pictures/yes_no.pdf){ width=50%, height=50% }
+
+![Production for Object Words](pictures/objects.pdf){ width=50%, height=50% }
+
+![Production for Other Words](pictures/other.pdf){ width=50%, height=50% }
+
 
 ### Video Recording and Editing
 
