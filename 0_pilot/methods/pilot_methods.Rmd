@@ -31,17 +31,19 @@ The table below summarizes the study's $2\times2$ design. Positive trial types c
 
 ## Stimuli
 
-### Puppets and Objects
+### Puppets
 
 [we should include the picture of the puppets and the objects used in the experiment]
 
-2 puppets
+5 Different puppets. 1 puppet that recieves the objects and 4 puppets, 1 per condition, that gives objects to the receiver puppet
 
-Objects:
-apple vs. banana;
-ball vs. car;
-dog vs. cat;
-duck vs. bear;
+### Objects
+
+Three pairs of objects for the three trial in a condition:
+
+1. apple vs. banana
+2. ball vs. car
+3. ducky vs. kitty
 
 ### Linguistic Stimuli
 
@@ -53,9 +55,9 @@ According to CDI data (accessed through wordbank.stanford.edu), around 27 months
 
 The remaining words used in the study (do, you, want, the) are clustered around 50% in terms of production at 27 months, and that proportion is increasing rapidly at that age, as seen in the graph. There were not data in the Stanford database for the word 'want', so 'want to/wanna' has been taken as a proxy under the assumption that production of 'want' is at least as high as production of 'want to'. 
 
-![Production for Yes and No](pictures/yes_no.pdf){ width=45%, height=45% }
+![Production for Yes and No](pictures/yes_no.pdf){width=45%, height=45%}
 
-![Production for Object Words](pictures/objects.pdf){ width=45%, height=45% }
+![Production for Object Words](pictures/objects.pdf){width=45%, height=45% }
 
 \newpage
 
@@ -64,11 +66,9 @@ The remaining words used in the study (do, you, want, the) are clustered around 
 
 ### Video Recording and Editing
 
-
-
 ## Trials
 
-<!--insert familiarization trial here-->
+### Familiriaziaton
 
 ### Block 1: Positive Consistent
 
@@ -76,8 +76,7 @@ The remaining words used in the study (do, you, want, the) are clustered around 
 |-------|-------|-----|-------|
 |Apple, Banana| Do you want the apple?| Yes| gives apple|
 |Ball, Car| Do you want the ball?| Yes| gives ball|
-|Cat, Dog| Do you want the kitty?| Yes| gives cat|
-|Duck, Bear| Do you want the ducky?| Yes| gives duck|
+|Duck, Cat| Do you want the kitty?| Yes| gives cat|
 
 ### Block 2: Positive Inconsistent
 
@@ -85,8 +84,7 @@ The remaining words used in the study (do, you, want, the) are clustered around 
 |-------|-------|-----|-------|
 |Apple, Banana| Do you want the apple?| Yes| gives banana|
 |Ball, Car| Do you want the ball?| Yes| gives car|
-|Cat, Dog| Do you want the kitty?| Yes| gives dog|
-|Duck, Bear| Do you want the ducky?| Yes| gives bear|
+|Cat, Duck| Do you want the kitty?| Yes| gives duck|
 
 ### Block 3: Negative Consistent
 
@@ -94,8 +92,7 @@ The remaining words used in the study (do, you, want, the) are clustered around 
 |-------|-------|-----|-------|
 |Apple, Banana| Do you want the apple?| No| gives banana|
 |Ball, Car| Do you want the ball?| No| gives car|
-|Cat, Dog| Do you want the kitty?| No| gives dog|
-|Duck, Bear| Do you want the ducky?| No| gives bear|
+|Cat, Duck| Do you want the kitty?| No| gives duck|
 
 ### Block 4: Negative Inconsistent
 
@@ -103,8 +100,11 @@ The remaining words used in the study (do, you, want, the) are clustered around 
 |-------|-------|-----|-------|
 |Apple, Banana| Do you want the apple?| No| gives apple|
 |Ball, Car| Do you want the ball?| No| gives ball|
-|Cat, Dog| Do you want the kitty?| No| gives cat|
-|Duck, Bear| Do you want the ducky?| No| gives duck|
+|Cat, Duck| Do you want the kitty?| No| gives cat|
+
+* would Block 3 be surprising to babies?
+
+* label-object matching: if the object given is the label mentioned then no surprise, but if it's a different one = surprise (prediction: surprise at Block 2 and 3)
 
 ## Participants
 
@@ -118,6 +118,10 @@ We use the duration of infant's looking at the screen after a trial video has en
 The stimuli will be controlled by the experimenter, blind to the stimuli but with a live feed of the child. The experimenter will code the child's looking time by pressing a key when the child is looking at the screen and releasing when the child looks away. Each trial will end when the last frame is showing and the experimenter has indicated that the child has been looking away from the screen for 2 seconds. The next trial will then start automatically. Each participant will be recoded by an independent coder blind to the stimuli and to the experimental hypotheses, with a 95% agreement threshold between coders. 
 
 <!--I believe 95% is what Jonathan uses, but we should decide if that is correct for our specific purposes-->
+
+### Reliability Coding
+
+## Procedure
 
 ## Results and Analyses
 
