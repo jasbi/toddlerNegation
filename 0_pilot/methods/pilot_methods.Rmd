@@ -31,21 +31,25 @@ The table below summarizes the study's $2\times2$ design. Positive trial types c
 
 ## Stimuli
 
-### Puppets and Objects
+### Puppets
 
 [we should include the picture of the puppets and the objects used in the experiment]
 
-2 puppets
+5 Different puppets. 1 puppet that recieves the objects and 4 puppets, 1 per condition, that gives objects to the receiver puppet
 
-Objects:
-apple vs. banana
-ball vs. car
-dog vs. kitty
-ducky vs. bear
+### Objects
+
+Three pairs of objects for the three trial in a condition:
+
+1. apple vs. banana
+2. ball vs. car
+3. ducky vs. kitty
 
 ### Linguistic Stimuli
 
 <!--Annika: can you include the analyses of the age of acquisition for all the words we use in the study here? Basically the report you wrote using wordbank.stanford.edu and childes-db.stanford.edu -->
+
+Here we want to argue that in the window of 24-30 months toddlers know all these lexical items that's why we do our pilot in this age range.
 
 List of lexical items used: no, yes, want, you, ... [list of our items like car, banana, ...] 
 
@@ -57,14 +61,15 @@ Studies to cite on earlier comprehension of these common nouns: Bergelson and Sw
 
 ## Trials
 
+### Familiriaziaton
+
 ### Block 1: Positive Consistent
 
 |Objects|Question|Answer|Reaction|
 |-------|-------|-----|-------|
 |Apple, Banana| Do you want the apple?| Yes| gives apple|
 |Ball, Car| Do you want the ball?| Yes| gives ball|
-|Cat, Dog| Do you want the kitty?| Yes| gives cat|
-|Duck, Bear| Do you want the ducky?| Yes| gives duck|
+|Duck, Cat| Do you want the kitty?| Yes| gives cat|
 
 ### Block 2: Positive Inconsistent
 
@@ -72,8 +77,7 @@ Studies to cite on earlier comprehension of these common nouns: Bergelson and Sw
 |-------|-------|-----|-------|
 |Apple, Banana| Do you want the apple?| Yes| gives banana|
 |Ball, Car| Do you want the ball?| Yes| gives car|
-|Cat, Dog| Do you want the kitty?| Yes| gives dog|
-|Duck, Bear| Do you want the ducky?| Yes| gives bear|
+|Cat, Duck| Do you want the kitty?| Yes| gives duck|
 
 ### Block 3: Negative Consistent
 
@@ -81,8 +85,7 @@ Studies to cite on earlier comprehension of these common nouns: Bergelson and Sw
 |-------|-------|-----|-------|
 |Apple, Banana| Do you want the apple?| No| gives banana|
 |Ball, Car| Do you want the ball?| No| gives car|
-|Cat, Dog| Do you want the kitty?| No| gives dog|
-|Duck, Bear| Do you want the ducky?| No| gives bear|
+|Cat, Duck| Do you want the kitty?| No| gives duck|
 
 ### Block 4: Negative Inconsistent
 
@@ -90,8 +93,11 @@ Studies to cite on earlier comprehension of these common nouns: Bergelson and Sw
 |-------|-------|-----|-------|
 |Apple, Banana| Do you want the apple?| No| gives apple|
 |Ball, Car| Do you want the ball?| No| gives ball|
-|Cat, Dog| Do you want the kitty?| No| gives cat|
-|Duck, Bear| Do you want the ducky?| No| gives duck|
+|Cat, Duck| Do you want the kitty?| No| gives cat|
+
+* would Block 3 be surprising to babies?
+
+* label-object matching: if the object given is the label mentioned then no surprise, but if it's a different one = surprise (prediction: surprise at Block 2 and 3)
 
 ## Participants
 
@@ -100,6 +106,10 @@ Csibra et al (2016) report that the average effect size in infant looking time s
 ## Measurment & Reliability
 
 We use the duration of infant's looking at the screen after a trial video has ended as our dependent measure. All trials end with the last frame frozen on the screen. We move to the next trial if infants stop looking at the screen for more than 2 seconds. Timing, trial ordering, and presentation was managed using the open source software [https://github.com/jfkominsky/PyHab/releases](PyHab developed by Jonathan Kominsky)
+
+### Reliability Coding
+
+## Procedure
 
 ## Results and Analyses
 
