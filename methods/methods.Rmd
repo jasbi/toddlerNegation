@@ -113,7 +113,7 @@ Csibra et al (2016) report that the average effect size in infant looking time s
 ## Measurment & Reliability
 
 We use the duration of infant's looking at the screen after a trial video has ended as our dependent measure. All trials end with the last frame frozen on the screen. We move to the next trial if infants stop looking at the screen for more than 2 seconds. Timing, trial ordering, and presentation were managed using the open source software 
-[PyHab developed by Jonathan Kominsky](https://github.com/jfkominsky/PyHab/releases)
+[PyHab developed by Jonathan Kominsky](https://github.com/jfkominsky/PyHab/releases).
 
 The stimuli will be controlled by the experimenter, blind to the stimuli but with a live feed of the child. The experimenter will code the child's looking time by pressing a key when the child is looking at the screen and releasing when the child looks away. Each trial will end when the last frame is showing and the experimenter has indicated that the child has been looking away from the screen for 2 seconds. The next trial will then start automatically. Each participant will be recoded by an independent coder blind to the stimuli and to the experimental hypotheses, with a 95% agreement threshold between coders. 
 
