@@ -1,6 +1,6 @@
 ---
 title: "Methods for Toddler's Comprehension of Negation"
-author: "Masoud Jasbi, Annika Mcdermott-Hinman"
+author: "Masoud Jasbi, Annika McDermott-Hinman"
 date: "6/30/2019"
 output: pdf_document
 ---
@@ -17,10 +17,10 @@ The study presents toddlers with video recordings and measures their looking tim
 
 The study has four within-subject trial types. These four trial-types are created based on two factors:
 
-1. Whehther the answer to the question is positive or negative
+1. Whether the answer to the question is positive or negative
 2. Whether the reaction to the answer is consistent or inconsistent with the expressed desire 
 
-The table below summarizes the study's $2\times2$ design. Positive trial types consititue the control condition and negative trial types constitute the test condition.
+The table below summarizes the study's $2\times2$ design. Positive trial types consititue the control condition and negative trial types constitute the test condition. Additionally, there will be a familiarization trial at the beginning of the study to allow the children to become accustomed to the stimuli before the test trials. 
 
 |Condition|Trial-Type|Objects|Question|Answer|Reaction|
 |-------|-----|-------|-------|-----|-------|
@@ -37,6 +37,7 @@ The table below summarizes the study's $2\times2$ design. Positive trial types c
 
 5 Different puppets. 1 puppet that recieves the objects and 4 puppets, 1 per condition, that gives objects to the receiver puppet
 
+<<<<<<< HEAD:0_pilot/methods/pilot_methods.Rmd
 ### Objects
 
 Three pairs of objects for the three trial in a condition:
@@ -44,24 +45,50 @@ Three pairs of objects for the three trial in a condition:
 1. apple vs. banana
 2. ball vs. car
 3. ducky vs. kitty
+=======
+Objects:
+apple vs. banana;
+ball vs. car;
+dog vs. cat;
+duck vs. bear;
+>>>>>>> 58fc1eb74c1fd1766fa80ddf569b3c76de73d747:methods/methods.Rmd
 
 ### Linguistic Stimuli
 
 <!--Annika: can you include the analyses of the age of acquisition for all the words we use in the study here? Basically the report you wrote using wordbank.stanford.edu and childes-db.stanford.edu -->
 
+<<<<<<< HEAD:0_pilot/methods/pilot_methods.Rmd
 Here we want to argue that in the window of 24-30 months toddlers know all these lexical items that's why we do our pilot in this age range.
 
 List of lexical items used: no, yes, want, you, ... [list of our items like car, banana, ...] 
+=======
+List of lexical items used: no, yes, want, you, do, the, apple, banana, ball, car, dog, cat, duck, bear 
+>>>>>>> 58fc1eb74c1fd1766fa80ddf569b3c76de73d747:methods/methods.Rmd
 
-According to CDI data (accessed through wordbank.stanford.edu), around 27 months of age almost all children produce "yes" and "no". 
+According to CDI data (accessed through wordbank.stanford.edu), around 27 months of age almost all children produce "yes" and "no". The names for all of the objects used are produced by more than 75% of children at 27 months, and are among the first nouns that children produce, as reported by parents (wordbank.stanford.edu). Additionally, Bergelson and Swingley (2012, 2015) provide good evidence that children understand common nouns long before they begin to produce them (as early as 6-9 months). 
 
-Studies to cite on earlier comprehension of these common nouns: Bergelson and Swingley (2012, 2015)
+The remaining words used in the study (do, you, want, the) are clustered around 50% in terms of production at 27 months, and that proportion is increasing rapidly at that age, as seen in the graph. There were not data in the Stanford database for the word 'want', so 'want to/wanna' has been taken as a proxy under the assumption that production of 'want' is at least as high as production of 'want to'. 
+
+![Production for Yes and No](pictures/yes_no.pdf){ width=45%, height=45% }
+
+![Production for Object Words](pictures/objects.pdf){ width=45%, height=45% }
+
+\newpage
+
+![Production for Other Words](pictures/other.pdf){ width=45%, height=45% }
+
 
 ### Video Recording and Editing
 
+
+
 ## Trials
 
+<<<<<<< HEAD:0_pilot/methods/pilot_methods.Rmd
 ### Familiriaziaton
+=======
+<!--insert familiarization trial here-->
+>>>>>>> 58fc1eb74c1fd1766fa80ddf569b3c76de73d747:methods/methods.Rmd
 
 ### Block 1: Positive Consistent
 
@@ -105,7 +132,12 @@ Csibra et al (2016) report that the average effect size in infant looking time s
 
 ## Measurment & Reliability
 
-We use the duration of infant's looking at the screen after a trial video has ended as our dependent measure. All trials end with the last frame frozen on the screen. We move to the next trial if infants stop looking at the screen for more than 2 seconds. Timing, trial ordering, and presentation was managed using the open source software [https://github.com/jfkominsky/PyHab/releases](PyHab developed by Jonathan Kominsky)
+We use the duration of infant's looking at the screen after a trial video has ended as our dependent measure. All trials end with the last frame frozen on the screen. We move to the next trial if infants stop looking at the screen for more than 2 seconds. Timing, trial ordering, and presentation were managed using the open source software 
+[PyHab developed by Jonathan Kominsky](https://github.com/jfkominsky/PyHab/releases).
+
+The stimuli will be controlled by the experimenter, blind to the stimuli but with a live feed of the child. The experimenter will code the child's looking time by pressing a key when the child is looking at the screen and releasing when the child looks away. Each trial will end when the last frame is showing and the experimenter has indicated that the child has been looking away from the screen for 2 seconds. The next trial will then start automatically. Each participant will be recoded by an independent coder blind to the stimuli and to the experimental hypotheses, with a 95% agreement threshold between coders. 
+
+<!--I believe 95% is what Jonathan uses, but we should decide if that is correct for our specific purposes-->
 
 ### Reliability Coding
 
@@ -113,7 +145,7 @@ We use the duration of infant's looking at the screen after a trial video has en
 
 ## Results and Analyses
 
-We predict that toddlers who understand our task will look longer at inconsistent trials than consistent ones. In the control condition, success inscludes correct comprehension of the positive word "yes". In the test condition, success involves correct comprehension of the negative word "no".
+We predict that toddlers who understand our task will look longer at inconsistent trials than consistent ones. In the control condition, success includes correct comprehension of the positive word "yes". In the test condition, success involves correct comprehension of the negative word "no".
 
 To test toddler's performance we use a Bayesian linear regression with the following as predictors: answer (yes/no) and reaction (consistent/inconsistent). Following Barr et al, we use the maximal by subject and item random effects. Item here is interpreted as the object handed to the second puppet by the first.
 
