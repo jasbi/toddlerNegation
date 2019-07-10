@@ -1,19 +1,22 @@
 ---
-title: "Methods for Toddler's Comprehension of Negation"
+title: "Methods for Toddler's Comprehension of Negation (Pilot Study)"
 author: "Masoud Jasbi, Annika McDermott-Hinman"
 date: "6/30/2019"
-output: pdf_document
+output:
+  word_document: default
+  pdf_document: default
+bibliography: ../../bibliography.bib
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Main Question: At what age do toddlers understand negation in the context of rejecting desires?
+Question 1: At what age do toddlers understand negation in the context of rejecting desires?
 
 ## Design
 
-The study presents toddlers with video recordings and measures their looking time to the screen in a violation of expectation paradigm (Baillargeon, Spelke, Wasserman 1985). In each trial, there are two puppets and two objects on the screen. One puppet asks the other if they want one of the objects. The second puppets answers with "yes" or "no". Then the first puppet goes ahead to give them the object they wanted, or the object they did not want.
+The study presents toddlers with video recordings and measures their looking time to the screen in a violation of expectation paradigm [@baillargeon1985object]. In each trial, there are two puppets and two objects on the screen. One puppet asks the other if they want one of the objects. The second puppets answers with "yes" or "no". Then the first puppet goes ahead to give the second one the object they wanted, or the object they did not want.
 
 The study has four within-subject trial types. These four trial-types are created based on two factors:
 
@@ -55,20 +58,31 @@ According to CDI data (accessed through wordbank.stanford.edu), around 27 months
 
 The remaining words used in the study (do, you, want, the) are clustered around 50% in terms of production at 27 months, and that proportion is increasing rapidly at that age, as seen in the graph. There were not data in the Stanford database for the word 'want', so 'want to/wanna' has been taken as a proxy under the assumption that production of 'want' is at least as high as production of 'want to'. 
 
-![Production for Yes and No](pictures/yes_no.pdf){width=45%, height=45%}
+![Production for Yes and No](pictures/yes_no.pdf){width=30%, height=30%}
 
-![Production for Object Words](pictures/objects.pdf){width=45%, height=45% }
+![Production for Object Words](pictures/objects.pdf){width=35%, height=35% }
 
-\newpage
-
-![Production for Other Words](pictures/other.pdf){ width=45%, height=45% }
+![Production for Other Words](pictures/other.pdf){ width=35%, height=35% }
 
 
 ### Video Recording and Editing
 
+Details of how the stimuli were created and edited go here.
+
 ## Trials
 
 ### Familiriaziaton
+
+In the familiarization trials, toddlers are introduced to the six objects in the experiment and their labels. Each object appeared on the screen for 5 seconds and it was labeled by the first puppet (the one that hands out the objects).
+
+|Objects|Labeling|
+|-------|-------|
+|Apple| Look! An apple!|
+|Banana| Look! A banana!|
+|Ball| Look! A ball!|
+|Car| Look! A car!|
+|Duck| Look! A duck!|
+|Cat| Look! A cat!|
 
 ### Block 1: Positive Consistent
 
@@ -102,33 +116,35 @@ The remaining words used in the study (do, you, want, the) are clustered around 
 |Ball, Car| Do you want the ball?| No| gives ball|
 |Cat, Duck| Do you want the kitty?| No| gives cat|
 
-* would Block 3 be surprising to babies?
-
-* label-object matching: if the object given is the label mentioned then no surprise, but if it's a different one = surprise (prediction: surprise at Block 2 and 3)
-
 ## Participants
 
-Csibra et al (2016) report that the average effect size in infant looking time studies is about 0.6. Based on this they recommend at least 12 participants and for smaller than usual effect sizes at least 26 participants. Therefore, for our pilot study we aim to recruit between 12-26 participants in the age range of 24-30 months.
+@csibra2016statistical report that the average effect size in infant looking time studies is about 0.6. Based on this they recommend at least 12 participants and for smaller than usual effect sizes at least 26 participants. Therefore, for our pilot study we aimed at recruiting between 12-26 participants in the age range of 24-30 months.
 
-## Measurment & Reliability
+## Measurment
 
 We use the duration of infant's looking at the screen after a trial video has ended as our dependent measure. All trials end with the last frame frozen on the screen. We move to the next trial if infants stop looking at the screen for more than 2 seconds. Timing, trial ordering, and presentation were managed using the open source software 
 [PyHab developed by Jonathan Kominsky](https://github.com/jfkominsky/PyHab/releases).
 
-The stimuli will be controlled by the experimenter, blind to the stimuli but with a live feed of the child. The experimenter will code the child's looking time by pressing a key when the child is looking at the screen and releasing when the child looks away. Each trial will end when the last frame is showing and the experimenter has indicated that the child has been looking away from the screen for 2 seconds. The next trial will then start automatically. Each participant will be recoded by an independent coder blind to the stimuli and to the experimental hypotheses, with a 95% agreement threshold between coders. 
+The stimuli will be controlled by the experimenter, unaware of the stimuli but with a live feed of the child. The experimenter will code the child's looking time by pressing a key when the child is looking at the screen and releasing when the child looks away. Each trial will end when the last frame is showing and the experimenter has indicated that the child has been looking away from the screen for 2 seconds. The next trial will then start automatically. 
 
 <!--I believe 95% is what Jonathan uses, but we should decide if that is correct for our specific purposes-->
 
-### Reliability Coding
+## Reliability
 
-## Procedure
+Trial data provided by each participant will be recoded by an independent coder blind to the stimuli and to the experimental hypotheses. Relibaility was computed as ???. We determined the agreement threshold between coders to be 95%. 
 
 ## Results and Analyses
 
 We predict that toddlers who understand our task will look longer at inconsistent trials than consistent ones. In the control condition, success includes correct comprehension of the positive word "yes". In the test condition, success involves correct comprehension of the negative word "no".
 
-To test toddler's performance we use a Bayesian linear regression with the following as predictors: answer (yes/no) and reaction (consistent/inconsistent). Following Barr et al, we use the maximal by subject and item random effects. Item here is interpreted as the object handed to the second puppet by the first.
+To test toddler's performance we use a Bayesian linear regression with the following as predictors: answer (yes/no) and reaction (consistent/inconsistent). Following @barr2013random, we use the maximal by subject and item random effects. Item here is interpreted as the object handed to the second puppet by the first.
 
-Following the adivce of Csibra et al (2016) we log-transform the infant looking time for our statistical analyses.
+Following @csibra2016statistical, we log-transform the infant looking time for our statistical analyses.
 
-<!-- Potential places to submit this as a registered report: Developmental Science, Cognition, Child Language,  Language Learning-->
+## Alternative Accounts
+
+* label-object matching account: if the object given is the label mentioned then no surprise, but if it's a different one = surprise (prediction: surprise at Block 2 and 3)
+
+## References
+
+<!-- Potential places to submit this as a registered report: Developmental Science, Cognition, Child Language, Language Learning-->
