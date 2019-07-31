@@ -3,9 +3,9 @@ title: "Methods for Toddler's Comprehension of Negation (Pilot Study)"
 author: "Jasbi, McDermott-Hinman, Feiman, Davidson, Snedeker, Carey"
 date: "6/30/2019"
 output:
-  word_document: default
   html_document:
     df_print: paged
+  word_document: default
   pdf_document: default
 bibliography: ../../bibliography.bib
 ---
@@ -85,7 +85,7 @@ The study started with the puppets entering the scene and introducing themselves
 
 ### Design
 
-![Study design, randomization, and example trials.](pictures/logn-design.jpg)
+![Study design, randomization, and example trials. Squares in the randomization section on the left suggest the randomly selected options for making the example trials on the right. Circled objects on the last column of example blocks on the right depict the objects handed to Yuni (Y) by Diego (D).](pictures/logn-design.png)
 
 The figure below shows the study design, randomization, and procedure. From left to right, it shows the elements that were randomized, the experiental blocks, and example trials within blocks. For each participant, object pairs were assigned randomly to the four blocks and counterbalanced across participants. In the figure above, the pair apple-banana is assigned to the first block, ball-car to the second, cup-spoon to the third, and duck-bear to the fourth. Within each block, children first saw a video introducing and labeling the objects. Then they saw two trials which only differed with respect to the position of the objects on the screen. For each block, it was randomly decided which object label is going to be used to form the question "Do you want X?".
 
