@@ -3,9 +3,9 @@ title: "Methods for Toddler's Comprehension of Negation (Pilot Study)"
 author: "Jasbi, McDermott-Hinman, Feiman, Davidson, Snedeker, Carey"
 date: "6/30/2019"
 output:
+  pdf_document: default
   html_document:
     df_print: paged
-  pdf_document: default
   word_document: default
 bibliography: ../../bibliography.bib
 ---
@@ -42,36 +42,29 @@ The study had two puppets: Yuni the unicorn and Diego the Dragon. Yuni is the pu
 
 ### Objects
 
-We used four pairs of objects (one per trial type): 
-
-  1. an apple and a banana, 
-
-  2. small ball and a toy car
-
-  3. rubber duck and a teddy bear
-
-  4. a cup and a spoon.
+We used four pairs of objects (one per trial type): 1. an apple and a banana, 2. a small ball and a toy car, 3. a rubber duck and a teddy bear 4. a cup and a spoon.
 
 ### Words
 
-This study used the following words in its test trials: *no*, *yes*, *do*, *you*, *want*, *the*, *apple*, *banana*, *ball*, *car*, *duck*, *bear*, *cup*, and *spoon*. This section provides evidence that the majority of children between 24 and 30 months are faimilar with these words. We used the MacArthur-Bates Communicative Development Inventory (MB-CDI), accessed via (wordbank.stanford.edu)[wordbank.stanford.edu] [@frank2017wordbank], and children's productions in CHILDES, accessed via (childes-db.stanford.edu)[childes-db.stanford.edu].
+This study used the following words in its test trials: *no*, *yes*, *do*, *you*, *want*, *the*, *apple*, *banana*, *ball*, *car*, *duck*, *bear*, *cup*, and *spoon*. This section provides evidence that the majority of children between 24 and 30 months are faimilar with these words. We used the MacArthur-Bates Communicative Development Inventory (MB-CDI), accessed via (wordbank.stanford.edu)[wordbank.stanford.edu] [@frank2017wordbank], and children's productions in CHILDES, accessed via (childes-db.stanford.edu)[childes-db.stanford.edu]. CDI data is indirect parents' reports on children's vocabulary development while CHILDES data is recordings of children producing the words directly.
 
-![](pictures/cdi_yes_no.png){width=50%}
+![Proportion of toddlers producing "yes" and "no" according to CDI data.](pictures/cdi_yes_no.png){width=50%}
 
 According to CDI data, around 27 months of age almost all children produce "yes" and "no". The names for all of the objects used are produced by more than 75% of children at 27 months, and are among the first nouns that children produce, as reported by parents (wordbank.stanford.edu). Additionally, @bergelson2012 and @bergelson2015early  provide good evidence that children understand common nouns long before they begin to produce them (as early as 6-9 months). 
 
-![](pictures/cdi_objects.png){width=50%}
+![Proportion of toddlers producing object labels according to CDI data.](pictures/cdi_objects.png){width=50%}
 
 The remaining words used in the study (do, you, want, the) are clustered around 50% in terms of production at 27 months, and that proportion is increasing rapidly at that age, as seen in the graph. There was no data for the word 'want', so 'want to/wanna' has been taken as a proxy under the assumption that production of 'want' is at least as high as production of 'want to'. 
 
-![](pictures/cdi_other.png){width=50%}
+We also looked at children's productions of these words in CHILDES. The graph below shows that all the words in our experiment are produced in the second and third year of children's lives, the same age range that our experiment targets. 
+
+![Proportion of toddlers producing the verb and the functional elements in the experiment according to CDI data.](pictures/cdi_other.png){width=50%}
 
 
-![](pictures/childes_yes_no.png){width=50%}
+![Relative frequency of "yes" and "no" in children's production according to CHILDES](pictures/childes_yes_no.png){width=50%}
+![Relative frequency of object labels in children's production according to CHILDES](pictures/childes_objects.png){width=50%}
 
-![](pictures/childes_objects.png){width=50%}
-
-![](pictures/childes_other.png){width=50%}
+![Relative frequency of the verb "want" and other functional elements in children's speech according to CHILDES](pictures/childes_other.png){width=50%}
 
 ### Video and Audio Recording/Editing
 
