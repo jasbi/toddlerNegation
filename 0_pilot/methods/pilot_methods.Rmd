@@ -3,10 +3,10 @@ title: "Methods for Toddler's Comprehension of Negation (Pilot Study)"
 author: "Jasbi, McDermott-Hinman, Feiman, Davidson, Snedeker, Carey"
 date: "6/30/2019"
 output:
-  pdf_document: default
+  word_document: default
   html_document:
     df_print: paged
-  word_document: default
+  pdf_document: default
 bibliography: ../../bibliography.bib
 ---
 
@@ -18,7 +18,7 @@ This pilot study addresses the following main question: At what age do toddlers 
 
 ## Design Summary
 
-The study presents toddlers with videos and measures their looking time to the screen in a violation of expectation paradigm [@baillargeon1985object]. In each trial, there are two puppets and two objects on the screen. One puppet asks the other if they want one of the objects. The second puppet answers with "yes" or "no". Then the first puppet gives either the desired object, or the object that was rejected. We hypothesize that knowledge of negation in the context of rejecting desires results in surprise when the puppet provides a rejected object.
+The study presents toddlers with videos and measures their looking time to the screen in a violation of expectation paradigm [@baillargeon1985object]. In each trial, there are two puppets and two objects on the screen. One puppet asks the other if they want one of the objects. The second puppet answers with "yes" or "no". Then the first puppet gives either the desired object (consistent with the answer), or the object that was not desired (inconsistent with the answer). We hypothesize that knowledge of negation in the context of rejecting desires results in surprise when the puppet provides a rejected object.
 
 The study has four within-subject trial types. These four trial-types are created based on two factors:
 
@@ -40,9 +40,16 @@ The table below summarizes the study's $2\times2$ design. Positive trial types c
 
 The study had two puppets: Yuni the unicorn and Diego the Dragon. Yuni is the puppet that receives objects and Diego is the puppet that asks Yuni what she wants and gives her an object.
 
+![Yuni (left) and Diego (right).](stimuli/last_frame/AB_B.png){width=50%}
+
 ### Objects
 
 We used four pairs of objects (one per trial type): 1. an apple and a banana, 2. a small ball and a toy car, 3. a rubber duck and a teddy bear 4. a cup and a spoon.
+
+![The apple and the banana in the experiment.](stimuli/last_frame/AB_intro_S.png){width=50%}
+![The ball and the car in the experiment](stimuli/last_frame/BC_intro_S.png){width=50%}
+![The duck and the bear in the experiment](stimuli/last_frame/BD_intro_S.png){width=50%}
+![Proportion of toddlers producing "yes" and "no" according to CDI data.](stimuli/last_frame/CS_intro_S.png){width=50%}
 
 ### Words
 
@@ -80,7 +87,7 @@ The study started with the puppets entering the scene and introducing themselves
 
 ![Study design, randomization, and example trials.](pictures/logn-design.jpg)
 
-The figure above shows the study design, randomization, and procedure. From left to right, it shows the elements that were randomized, the experiental blocks, and example trials within blocks. For each participant, object pairs were assigned randomly to the four blocks and counterbalanced across participants. In the figure above, the pair apple-banana is assigned to the first block, ball-car to the second, cup-spoon to the third, and duck-bear to the fourth. Within each block, children first saw a video introducing and labeling the objects. Then they saw two trials which only differed with respect to the position of the objects on the screen. For each block, it was randomly decided which object label is going to be used to form the question "Do you want X?".
+The figure below shows the study design, randomization, and procedure. From left to right, it shows the elements that were randomized, the experiental blocks, and example trials within blocks. For each participant, object pairs were assigned randomly to the four blocks and counterbalanced across participants. In the figure above, the pair apple-banana is assigned to the first block, ball-car to the second, cup-spoon to the third, and duck-bear to the fourth. Within each block, children first saw a video introducing and labeling the objects. Then they saw two trials which only differed with respect to the position of the objects on the screen. For each block, it was randomly decided which object label is going to be used to form the question "Do you want X?".
 
 The first experimental block was always the positive-consistent block in which Diego asked if Yuni wants an object, Yuni said "yes", and Diego gave Yuni the object. The second block was always the negative-consistent block: Diego asked if Yuni wants an object, Yuni said "no", so Diego gave Yuni the other object. Previous research has shown that in experimental settings, comprehension is better scaffolded in toddlers if negative trials follow positive ones and not vice versa. After the second block, participants randomly saw one of the positive or negative inconsistent blocks, followed by the other. The inconsistent blocks were randomized to reduce possible systmatic decrease of looking times in the fourth block due to famliarity with Diego's inconsistent behavior.
 
@@ -103,20 +110,18 @@ Trial data provided by each participant were recoded by an independent coder una
 
 Assuming that toddlers understood the basics of our task, as well as the meaning of the words used including "yes" and "no", we predicted that:
 
-  1. Toddlers will look longer at inconsistent trials than consistent ones.
-  2. Toddlers will look longer at negative inconsistent trials than positive ones.
+  1. Toddlers will look longer at inconsistent trials than consistent ones (main effect).
+  2. Toddlers will look longer at negative inconsistent trials than positive ones (interaction).
 
 To verify these predictions we use a Bayesian mixed effects linear regression with the fixed effects of consistency (consistent/inconsistent) and negation (yes/no). These factors will be dummy coded with the intercept of the model as positive consistent trials. Following @barr2013random, we use the maximal by subject and item random effects allowed by our design. Following @csibra2016statistical, we log-transform the infant looking time for our statistical analyses.
 
-$log(lookingTime_{ij}) \sim \alpha + \beta_{inconsistency} \times consistency + \beta_{negative} \times negation + \beta_{incons.neg}\times negation \times consistency$
+$log(lookingTime_{ij}) \sim \alpha + \beta_{inconsistent} \times consistency + \beta_{negative} \times negation + \beta_{incons.neg}\times negation \times consistency + \beta_{order}\times trialOrder$
 
-Prediction: main effect of consistency, no main effect of answer, significant interaction between consistency and answer: longer looking time in inconsistent negative trials. 
+We predict that successful comprehension in our tasks results in positive model estimates for the following coefficients: $\beta_{inconsistent}$ and $\beta_{incons.neg}$, and estimates distributed around 0 for $\beta_{negative}$. We will also include per subject and item random intercepts and slopes.
 
 ## Alternative Accounts
 
-* label-object matching account: if the object given is the label mentioned then no surprise, but if it's a different one = surprise. Predicts surprise at match trials 1 and 4.
-
-* Response matching: if the puppet says no, then there is a surprise. Not if it says yes. Predicts surprise at negative blocks.
+Here we discuss the alternative accounts of children's behavior. First we consider the label-object matching account. Children may only track which object label was mentioned and which object was provided. The prediction is that children look longer if an object other than the one mentioned was provided. This results in increased looking time for positive inconsistent and negative consistent trials. Another possibility is that children will be simply surprised by negation and look longer at negative trials. The prediction is that they look longer at negative trials.
 
 ## Discussion
 
