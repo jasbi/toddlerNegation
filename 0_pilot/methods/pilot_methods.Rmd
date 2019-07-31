@@ -1,10 +1,12 @@
 ---
 title: "Methods for Toddler's Comprehension of Negation (Pilot Study)"
-author: "Masoud Jasbi, Annika McDermott-Hinman"
+author: "Jasbi, McDermott-Hinman, Feiman, Davidson, Snedeker, Carey"
 date: "6/30/2019"
 output:
-  word_document: default
+  html_document:
+    df_print: paged
   pdf_document: default
+  word_document: default
 bibliography: ../../bibliography.bib
 ---
 
@@ -12,139 +14,120 @@ bibliography: ../../bibliography.bib
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Question 1: At what age do toddlers understand negation in the context of rejecting desires?
+This pilot study addresses the following main question: At what age do toddlers understand negation in the context of rejection? We plan to extend this paradigm to test negation in the context of denial and non-existence in the future.
 
-## Design
+## Design Summary
 
-The study presents toddlers with video recordings and measures their looking time to the screen in a violation of expectation paradigm [@baillargeon1985object]. In each trial, there are two puppets and two objects on the screen. One puppet asks the other if they want one of the objects. The second puppets answers with "yes" or "no". Then the first puppet goes ahead to give the second one the object they wanted, or the object they did not want.
+The study presents toddlers with videos and measures their looking time to the screen in a violation of expectation paradigm [@baillargeon1985object]. In each trial, there are two puppets and two objects on the screen. One puppet asks the other if they want one of the objects. The second puppet answers with "yes" or "no". Then the first puppet gives either the desired object, or the object that was rejected. We hypothesize that knowledge of negation in the context of rejecting desires results in surprise when the puppet provides a rejected object.
 
 The study has four within-subject trial types. These four trial-types are created based on two factors:
 
-1. Whether the answer to the question is positive or negative
-2. Whether the reaction to the answer is consistent or inconsistent with the expressed desire 
+1. Negation: Whether the answer to the question is positive (yes) or negative (no)
+2. Consistency: Whether the desired or the rejected object is given 
 
-The table below summarizes the study's $2\times2$ design. Positive trial types consititue the control condition and negative trial types constitute the test condition. Additionally, there will be a familiarization trial at the beginning of the study to allow the children to become accustomed to the stimuli before the test trials. 
+The table below summarizes the study's $2\times2$ design. Positive trial types consititue the control condition and negative trial types constitute the test condition. 
 
-|Condition|Trial-Type|Objects|Question|Answer|Reaction|
-|-------|-----|-------|-------|-----|-------|
-|Control|Positive-Consistent|X, Y| Do you want the X?| Yes| gives X|
-|Control|Positive-Inconsistent|X, Y| Do you want the X?| Yes| gives Y|
-|Test|Negative-Consistent|X, Y| Do you want the X?| No| gives Y|
-|Test|Negative-Inconsistent|X, Y| Do you want the X?| No| gives X|
+|Trial-Type|Objects|Question|Answer|Object Received|
+|-----|-------|-------|-----|-------|
+|Positive-Consistent|X, Y| Do you want the X?| Yes| X|
+|Positive-Inconsistent|X, Y| Do you want the X?| Yes| Y|
+|Negative-Consistent|X, Y| Do you want the X?| No| Y|
+|Negative-Inconsistent|X, Y| Do you want the X?| No| X|
 
 ## Stimuli
 
 ### Puppets
 
-[we should include the picture of the puppets and the objects used in the experiment]
-
-5 Different puppets. 1 puppet that recieves the objects and 4 puppets, 1 per condition, that gives objects to the receiver puppet
+The study had two puppets: Yuni the unicorn and Diego the Dragon. Yuni is the puppet that receives objects and Diego is the puppet that asks Yuni what she wants and gives her an object.
 
 ### Objects
 
-Three pairs of objects for the three trial in a condition:
+We used four pairs of objects (one per trial type): 
 
-1. apple vs. banana
-2. ball vs. car
-3. ducky vs. kitty
+  1. an apple and a banana, 
 
-### Linguistic Stimuli
+  2. small ball and a toy car
 
-<!--Annika: can you include the analyses of the age of acquisition for all the words we use in the study here? Basically the report you wrote using wordbank.stanford.edu and childes-db.stanford.edu -->
+  3. rubber duck and a teddy bear
 
-List of lexical items used: no, yes, want, you, do, the, apple, banana, ball, car, dog, cat, duck, bear 
+  4. a cup and a spoon.
 
-According to CDI data (accessed through wordbank.stanford.edu), around 27 months of age almost all children produce "yes" and "no". The names for all of the objects used are produced by more than 75% of children at 27 months, and are among the first nouns that children produce, as reported by parents (wordbank.stanford.edu). Additionally, Bergelson and Swingley (2012, 2015) provide good evidence that children understand common nouns long before they begin to produce them (as early as 6-9 months). 
+### Words
 
-The remaining words used in the study (do, you, want, the) are clustered around 50% in terms of production at 27 months, and that proportion is increasing rapidly at that age, as seen in the graph. There were not data in the Stanford database for the word 'want', so 'want to/wanna' has been taken as a proxy under the assumption that production of 'want' is at least as high as production of 'want to'. 
+This study used the following words in its test trials: *no*, *yes*, *do*, *you*, *want*, *the*, *apple*, *banana*, *ball*, *car*, *duck*, *bear*, *cup*, and *spoon*. This section provides evidence that the majority of children between 24 and 30 months are faimilar with these words. We used the MacArthur-Bates Communicative Development Inventory (MB-CDI), accessed via (wordbank.stanford.edu)[wordbank.stanford.edu] [@frank2017wordbank], and children's productions in CHILDES, accessed via (childes-db.stanford.edu)[childes-db.stanford.edu].
 
-![Production for Yes and No](pictures/yes_no.pdf){width=30%, height=30%}
+![](pictures/cdi_yes_no.png){width=50%}
 
-![Production for Object Words](pictures/objects.pdf){width=35%, height=35% }
+According to CDI data, around 27 months of age almost all children produce "yes" and "no". The names for all of the objects used are produced by more than 75% of children at 27 months, and are among the first nouns that children produce, as reported by parents (wordbank.stanford.edu). Additionally, @bergelson2012 and @bergelson2015early  provide good evidence that children understand common nouns long before they begin to produce them (as early as 6-9 months). 
 
-![Production for Other Words](pictures/other.pdf){ width=35%, height=35% }
+![](pictures/cdi_objects.png){width=50%}
+
+The remaining words used in the study (do, you, want, the) are clustered around 50% in terms of production at 27 months, and that proportion is increasing rapidly at that age, as seen in the graph. There was no data for the word 'want', so 'want to/wanna' has been taken as a proxy under the assumption that production of 'want' is at least as high as production of 'want to'. 
+
+![](pictures/cdi_other.png){width=50%}
 
 
-### Video Recording and Editing
+![](pictures/childes_yes_no.png){width=50%}
 
-Details of how the stimuli were created and edited go here.
+![](pictures/childes_objects.png){width=50%}
 
-## Trials
+![](pictures/childes_other.png){width=50%}
 
-### Familiriaziaton
+### Video and Audio Recording/Editing
 
-In the familiarization trials, toddlers are introduced to the six objects in the experiment and their labels. Each object appeared on the screen for 5 seconds and it was labeled by the first puppet (the one that hands out the objects).
+Videos were recorded in a video recording room using a X camera. Objects were placed on a round table covered with a blue table cloth and puppets were controlled from under the table. There were a total of 21 raw video recordings: 1 puppet introduction video, 4 object introduction videos, and 16 test trial videos (4 videos per trial-type). In the four test trial videos for each trial type, we varied the position of the objects (left vs. right) and which object was given to Yuni. Movements of the puppets including their mouth movements were timed using a metronome to stay consistent across trials. Videos were edited using Apple Mac OS's iMovie. No special or complex effects were used so any other video editing software can accomplish the same task. All the videos had the same length of 24 seconds. 
 
-|Objects|Labeling|
-|-------|-------|
-|Apple| Look! An apple!|
-|Banana| Look! A banana!|
-|Ball| Look! A ball!|
-|Car| Look! A car!|
-|Duck| Look! A duck!|
-|Cat| Look! A cat!|
+Audio stimuli were recorded separately in a phonetics lab's recording studio and added to the videos. The first author acted as the voice of Diego and the second author as the voice of Yuni. For Diego the recordings included: "Hi Yuni", "Alright", and 8 utterances of "Do you want the X?" where X was the lable of one of the objects. For Yuni, the recordings included "yes" and "no". Each video had a positive version in which "yes" was edited over on Yuni's mouth movements and a negative version that had "no" insetead. It also had a two versions for which object Diego asked for. In total, there were 64 test trial videos and 5 introduction videos used in the experiment. All video and audio stimuili are available for inspection in the stimuli folder of this study's repository.
 
-### Block 1: Positive Consistent
+## Procedure
 
-|Objects|Question|Answer|Reaction|
-|-------|-------|-----|-------|
-|Apple, Banana| Do you want the apple?| Yes| gives apple|
-|Ball, Car| Do you want the ball?| Yes| gives ball|
-|Duck, Cat| Do you want the kitty?| Yes| gives cat|
+The study started with the puppets entering the scene and introducing themselves. After this introduction video children saw 12 videos in 4 blocks. Each block had 3 trials: one introduction video to the objects followed by two test trials.
 
-### Block 2: Positive Inconsistent
+### Design
 
-|Objects|Question|Answer|Reaction|
-|-------|-------|-----|-------|
-|Apple, Banana| Do you want the apple?| Yes| gives banana|
-|Ball, Car| Do you want the ball?| Yes| gives car|
-|Cat, Duck| Do you want the kitty?| Yes| gives duck|
+![Study design, randomization, and example trials.](pictures/logn-design.jpg)
 
-### Block 3: Negative Consistent
+The figure above shows the study design, randomization, and procedure. From left to right, it shows the elements that were randomized, the experiental blocks, and example trials within blocks. For each participant, object pairs were assigned randomly to the four blocks and counterbalanced across participants. In the figure above, the pair apple-banana is assigned to the first block, ball-car to the second, cup-spoon to the third, and duck-bear to the fourth. Within each block, children first saw a video introducing and labeling the objects. Then they saw two trials which only differed with respect to the position of the objects on the screen. For each block, it was randomly decided which object label is going to be used to form the question "Do you want X?".
 
-|Objects|Question|Answer|Reaction|
-|-------|-------|-----|-------|
-|Apple, Banana| Do you want the apple?| No| gives banana|
-|Ball, Car| Do you want the ball?| No| gives car|
-|Cat, Duck| Do you want the kitty?| No| gives duck|
-
-### Block 4: Negative Inconsistent
-
-|Objects|Question|Answer|Reaction|
-|-------|-------|-----|-------|
-|Apple, Banana| Do you want the apple?| No| gives apple|
-|Ball, Car| Do you want the ball?| No| gives ball|
-|Cat, Duck| Do you want the kitty?| No| gives cat|
+The first experimental block was always the positive-consistent block in which Diego asked if Yuni wants an object, Yuni said "yes", and Diego gave Yuni the object. The second block was always the negative-consistent block: Diego asked if Yuni wants an object, Yuni said "no", so Diego gave Yuni the other object. Previous research has shown that in experimental settings, comprehension is better scaffolded in toddlers if negative trials follow positive ones and not vice versa. After the second block, participants randomly saw one of the positive or negative inconsistent blocks, followed by the other. The inconsistent blocks were randomized to reduce possible systmatic decrease of looking times in the fourth block due to famliarity with Diego's inconsistent behavior.
 
 ## Participants
 
-@csibra2016statistical report that the average effect size in infant looking time studies is about 0.6. Based on this they recommend at least 12 participants and for smaller than usual effect sizes at least 26 participants. Therefore, for our pilot study we aimed at recruiting between 12-26 participants in the age range of 24-30 months.
+@csibra2016statistical report that the average effect size in infant looking time studies is about 0.6. Based on this they recommend at least 12 participants and for smaller than usual effect sizes at least 26 participants. Therefore, for our pilot study we aimed at recruiting between 12-26 participants in the age range of 24-30 months. All participants were monolingual; they were only exposed to English.
 
 ## Measurment
 
-We use the duration of infant's looking at the screen after a trial video has ended as our dependent measure. All trials end with the last frame frozen on the screen. We move to the next trial if infants stop looking at the screen for more than 2 seconds. Timing, trial ordering, and presentation were managed using the open source software 
+Our dependent measure was the duration of infant's looking at the screen after a trial video had ended. All trials ended with the last frame frozen on the screen. We moved to the next trial if infants stopped looking at the screen for more than 2 seconds. Timing, trial ordering, and presentation were managed using the open source software 
 [PyHab developed by Jonathan Kominsky](https://github.com/jfkominsky/PyHab/releases).
 
-The stimuli will be controlled by the experimenter, unaware of the stimuli but with a live feed of the child. The experimenter will code the child's looking time by pressing a key when the child is looking at the screen and releasing when the child looks away. Each trial will end when the last frame is showing and the experimenter has indicated that the child has been looking away from the screen for 2 seconds. The next trial will then start automatically. 
+The stimuli were controlled by the experimenter, unaware of the stimuli but with a live feed of the child. The experimenter coded the child's looking time by pressing a key when the child was looking at the screen and releasing when the child looked away. Each trial ended when the last frame was showing and the experimenter had indicated that the child had been looking away from the screen for 2 seconds.
 
-<!--I believe 95% is what Jonathan uses, but we should decide if that is correct for our specific purposes-->
+### Reliability
 
-## Reliability
-
-Trial data provided by each participant will be recoded by an independent coder blind to the stimuli and to the experimental hypotheses. Relibaility was computed as ???. We determined the agreement threshold between coders to be 95%. 
+Trial data provided by each participant were recoded by an independent coder unaware of the stimuli and the experimental hypotheses. The coder used the pyHab software and relibaility was computed as the intraclass correlation coefficient (ICC). We determined that ICC should be above 0.75, a threshold which constitutes excellent agreement [@cicchetti1994guidelines]. 
 
 ## Results and Analyses
 
-We predict that toddlers who understand our task will look longer at inconsistent trials than consistent ones. In the control condition, success includes correct comprehension of the positive word "yes". In the test condition, success involves correct comprehension of the negative word "no".
+Assuming that toddlers understood the basics of our task, as well as the meaning of the words used including "yes" and "no", we predicted that:
 
-To test toddler's performance we use a Bayesian linear regression with the following as predictors: answer (yes/no) and reaction (consistent/inconsistent). Following @barr2013random, we use the maximal by subject and item random effects. Item here is interpreted as the object handed to the second puppet by the first.
+  1. Toddlers will look longer at inconsistent trials than consistent ones.
+  2. Toddlers will look longer at negative inconsistent trials than positive ones.
 
-Following @csibra2016statistical, we log-transform the infant looking time for our statistical analyses.
+To verify these predictions we use a Bayesian mixed effects linear regression with the fixed effects of consistency (consistent/inconsistent) and negation (yes/no). These factors will be dummy coded with the intercept of the model as positive consistent trials. Following @barr2013random, we use the maximal by subject and item random effects allowed by our design. Following @csibra2016statistical, we log-transform the infant looking time for our statistical analyses.
+
+$log(lookingTime_{ij}) \sim \alpha + \beta_{inconsistency} \times consistency + \beta_{negative} \times negation + \beta_{incons.neg}\times negation \times consistency$
+
+Prediction: main effect of consistency, no main effect of answer, significant interaction between consistency and answer: longer looking time in inconsistent negative trials. 
 
 ## Alternative Accounts
 
-* label-object matching account: if the object given is the label mentioned then no surprise, but if it's a different one = surprise (prediction: surprise at Block 2 and 3)
+* label-object matching account: if the object given is the label mentioned then no surprise, but if it's a different one = surprise. Predicts surprise at match trials 1 and 4.
+
+* Response matching: if the puppet says no, then there is a surprise. Not if it says yes. Predicts surprise at negative blocks.
+
+## Discussion
+
+Based on the pilot study, we plan to make changes to our materials and design to improve it for the final version of the study. The changes will be reflected in the final study's methods description and will be pre-registered before data collection.
 
 ## References
 
-<!-- Potential places to submit this as a registered report: Developmental Science, Cognition, Child Language, Language Learning-->
