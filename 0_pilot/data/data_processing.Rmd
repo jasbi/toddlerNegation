@@ -1,0 +1,55 @@
+---
+title: "Toddler Negation Processing Script"
+author: "Masoud Jasbi, Annika McDermott-Hinman"
+date: "8/5/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r library}
+library(tidyverse)
+library(rjson)
+library(stringr)
+```
+
+```{r}
+#initiate an empty dataframe
+processed_data <- data.frame()
+
+#read the names of all raw CSV data files in the folder raw_data
+file_names <- list.files("raw_data/", pattern=".csv")
+
+# iterate through each file name
+for (file_name in file_names){
+  # read the csv file into R
+  data <- read.csv(paste("raw_data/", file_name, sep=""))
+  # clean it up
+  cleaned_data <-
+    data %>%
+    select(-sumOnB:-numOffB, -habTrialNo, -habCrit) %>%
+    rename(looking_time = "sumOnA", lookAway_time = "sumOffA", num_looks = "numOnA",
+           num_looksAway = "numOffA", trial_order = "trial", inclusion = "GNG",
+           randomization = "cond") %>%
+    mutate(log_lookingTime = log(looking_time))
+  
+  # make the stimName column only encode stimulus names that include trial type, objects, and the object given
+  for(i in seq(2,25, by = 2)){
+    cleaned_data$stimName[i+1] <- cleaned_data$stimName[i]
+    }
+# create separate columns for trial type, objects in the trial, and object given  
+  intermediate_data <-
+    cleaned_data %>%
+    separate(stimName, c("stimName","ext"), sep="\\.") %>%
+    separate(stimName, c("trial_type", "objects_position", "given_object"), sep="_") %>% 
+    select(-ext)
+# store the prepared data frame into the final data frame to be written into the disk
+processed_data <- rbind(processed_data, intermediate_data)
+}
+```
+
+```{r saveFile}
+write.csv(processed_data, file="processed_data/processed_data.csv")
+```
