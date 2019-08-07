@@ -82,7 +82,7 @@ summary_data <-
 summary_data %>%
   ggplot(aes(trial_type,mean_lookingTime)) +
   geom_bar(stat = "identity") +
-  xlab("Mean Looking Time") + ylab("Trial Types") +
+  xlab("Trial Types") + ylab("Mean Looking Time") +
   theme_classic()
 ```
 
