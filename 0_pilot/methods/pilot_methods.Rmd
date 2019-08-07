@@ -3,10 +3,10 @@ title: "Methods for Toddler's Comprehension of Negation (Pilot Study)"
 author: "Jasbi, McDermott-Hinman, Feiman, Davidson, Snedeker, Carey"
 date: "6/30/2019"
 output:
+  pdf_document: default
   html_document:
     df_print: paged
   word_document: default
-  pdf_document: default
 bibliography: ../../bibliography.bib
 ---
 
@@ -30,8 +30,8 @@ The table below summarizes the study's $2\times2$ design. Positive trial types c
 |Trial-Type|Objects|Question|Answer|Object Received|
 |-----|-------|-------|-----|-------|
 |Positive-Consistent|X, Y| Do you want the X?| Yes| X|
-|Positive-Inconsistent|X, Y| Do you want the X?| Yes| Y|
 |Negative-Consistent|X, Y| Do you want the X?| No| Y|
+|Positive-Inconsistent|X, Y| Do you want the X?| Yes| Y|
 |Negative-Inconsistent|X, Y| Do you want the X?| No| X|
 
 ## Stimuli
