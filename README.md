@@ -1,4 +1,4 @@
-# Toddler's Comprehension of Negation 
+# Toddlers' Comprehension of Negation 
 Comprehension of Negation in Toddlers
 
 
